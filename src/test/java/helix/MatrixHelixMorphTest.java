@@ -80,4 +80,12 @@ public class MatrixHelixMorphTest {
         assertTrue(testEqual(expOutput, MatrixHelixMorph.helix(inMatrix)));
         
     }
+    @Test
+    public void test3x2() {
+        int[][] inMatrix  = { {1, 2, 3}, {4,5,6} };
+        int[][] expOutput = { {1, 2, 3},{6,5,4} };
+        assertTrue(testEqual(expOutput, MatrixHelixMorph.helix(inMatrix)));
+        
+    }
+    
 }
